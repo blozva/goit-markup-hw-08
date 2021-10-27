@@ -1,0 +1,18 @@
+.close-btn {
+  border: 0px;
+  padding: 0px;
+  position: fixed;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+  background-color: var(--primary-title-color);
+  fill: #000000;
+  transition: fill var(--timing-duration) var(--timing-function);
+  &:hover {
+    fill: var(--accent-color);
+  }
+  .close-btn-icon {
+    width: 30px;
+    height: 30px;
+  }
+}

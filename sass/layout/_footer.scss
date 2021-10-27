@@ -1,0 +1,34 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--section-aside-color);
+}
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+.footer-address {
+  width: 231px;
+  margin-right: 70px;
+}
+.address-list {
+  display: flex;
+  font-style: normal;
+  flex-direction: column;
+}
+.address-list__row:not(:last-child) {
+  margin-bottom: 9px;
+}
+.address-list__link {
+  @include font(400, 14px, 24px);
+  color: var(--text-item-color);
+  color: rgba(255, 255, 255, 0.6);
+  transition: color var(--timing-duration) var(--timing-function);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+  &.maps {
+    color: var(--primary-title-color);
+  }
+}

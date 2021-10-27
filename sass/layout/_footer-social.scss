@@ -1,0 +1,16 @@
+.footer-social {
+  width: 206px;
+  margin-right: 90px;
+}
+.footer-headline {
+  margin-bottom: 20px;
+  @include font(700, 14px, 16px);
+  text-transform: uppercase;
+  color: var(--primary-title-color);
+}
+.footer-social-link {
+  background: rgba(255, 255, 255, 0.1);
+  .social-list__icon {
+    fill: var(--primary-title-color);
+  }
+}

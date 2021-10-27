@@ -1,0 +1,39 @@
+.section.benefits {
+  padding-bottom: 47px;
+}
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.benefits-list__item {
+  margin-right: 30px;
+  height: 251px;
+  width: 270px;
+  &:last-child {
+    margin-right: 0;
+  }
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.benefits-list__card {
+  @include flex();
+  justify-content: center;
+  height: 120px;
+  background: var(--section-secondary-color);
+  border-radius: 4px;
+}
+
+.benefits-list__title {
+  margin-top: 30px;
+  @include font(700, 14px, 1.14);
+  text-transform: uppercase;
+}
+.benefits-list__text {
+  margin-top: 10px;
+  @include font(400, 14px, 1.71);
+  color: var(--text-item-color);
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
