@@ -1,13 +1,17 @@
-.section.pictures {
+.section.work-examples {
   padding-top: 47px;
+  display: none;
+  @media (min-width: 1200px) {
+    display: block;
+  }
 }
-.pictures-list {
+.work-examples-list {
   display: flex;
   flex-wrap: wrap;
   margin-right: -30px;
 }
 
-.pictures-list__item {
+.work-examples-list__item {
   position: relative;
   &:not(:last-child) {
     flex-basis: calc(100% / 3 - 30px);
@@ -15,7 +19,7 @@
   }
 }
 
-.pictures-text {
+.work-examples-text {
   @include font(700, 14px, 16px);
   text-align: center;
   text-transform: uppercase;

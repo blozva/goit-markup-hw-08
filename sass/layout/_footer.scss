@@ -4,21 +4,44 @@
   background-color: var(--section-aside-color);
 }
 .footer-container {
-  display: flex;
   align-items: baseline;
+  display: block;
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
 }
 .footer-address {
-  width: 231px;
-  margin-right: 70px;
+  font-style: normal;
+  text-align: center;
+  margin-right: 0px;
+  width: 100%;
+  @media (min-width: 768px) {
+    //margin-right: 165px;
+    width: 50%;
+  }
+  @media (min-width: 1200px) {
+    width: 231px;
+    margin-right: 70px;
+    text-align: start;
+  }
 }
 .address-list {
-  display: flex;
-  font-style: normal;
-  flex-direction: column;
+  display: block;
+  margin-bottom: 60px;
+  @media (min-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
 }
 .address-list__row:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
+
 .address-list__link {
   @include font(400, 14px, 24px);
   color: var(--text-item-color);
