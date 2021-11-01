@@ -1,5 +1,5 @@
 .section.hero {
-  max-width: 1600px;
+  width: 100%;
   padding-top: 200px;
   padding-bottom: 200px;
   align-items: center;
@@ -15,12 +15,19 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+  }
 }
 .hero-headline {
-  @include font(900, 44px, 60px, 0.06em);
+  @include font(900, 26px, 42px, 0.06em);
   text-transform: uppercase;
   margin-bottom: 30px;
   margin-right: auto;
   margin-left: auto;
-  max-width: 696px;
+  width: 100%;
+  @media screen and (min-width: 1200px) {
+    @include font(900, 44px, 60px, 0.06em);
+    max-width: 696px;
+  }
 }
