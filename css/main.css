@@ -181,13 +181,14 @@ img {
   margin-left: auto;
   display: none;
 }
-.auth-nav .auth-nav__item:not(:last-child) {
-  margin-right: 50px;
-}
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .auth-nav {
     display: flex;
+    flex: wrap;
   }
+}
+.auth-nav .auth-nav__item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .auth-nav-link {
@@ -529,6 +530,7 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--section-aside-color);
+  margin: 0 auto;
 }
 
 .footer-container {
