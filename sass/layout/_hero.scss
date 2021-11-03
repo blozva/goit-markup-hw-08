@@ -26,6 +26,9 @@
   margin-right: auto;
   margin-left: auto;
   width: 100%;
+  align-items: center;
+  text-align: center;
+
   @media screen and (min-width: 1200px) {
     @include font(900, 44px, 60px, 0.06em);
     max-width: 696px;

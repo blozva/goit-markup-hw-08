@@ -1,9 +1,10 @@
 .headline {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   @include font(700, 28px, 33px);
   text-align: center;
   color: var(--title-text-color);
   @media screen and (min-width: 1200px) {
     @include font(700, 36px, 42px);
+    margin-bottom: 50px;
   }
 }

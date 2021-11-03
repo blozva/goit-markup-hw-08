@@ -1,21 +1,23 @@
 .logo {
   font-family: "Raleway", sans-serif;
-  font-size: 26px;
-  line-height: 1.19;
+  @include font(400, 24px, 28px);
   color: var(--accent-color);
-  margin-right: 0px;
-  text-align: center;
-  .text {
-    font-family: "Raleway", sans-serif;
-    font-size: 26px;
-    line-height: 1.19;
-    color: var(--title-text-color);
-  }
-  @media (min-width: 768px) {
+  // text-align: center;
+  align-items: start;
+  @media (min-width: 1200px) {
     margin-right: 95px;
+    @include font(400, 26px, 31px);
   }
 }
-
+.text {
+  font-family: "Raleway", sans-serif;
+  @include font(400, 24px, 28px);
+  color: var(--title-text-color);
+  @media (min-width: 1200px) {
+    margin-right: 95px;
+    @include font(400, 26px, 31px);
+  }
+}
 .footer .logo {
   margin-bottom: 20px;
 }
