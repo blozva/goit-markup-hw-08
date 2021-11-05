@@ -13,15 +13,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
         integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
         crossorigin="anonymous" />
-    <!-- <link rel="stylesheet" href="./css/main.min.css"> -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
     <!-- Шапка сайта -->
     <header class="header">
         <div class="container header-container">
+            <p class="logo">Web<span class="text">Studio</span></p>
             <nav class="header-navigate">
-                <p class="logo">Web<span class="text">Studio</span></p>
                 <ul class="site-nav">
                     <li class="site-nav__item"> <a class="site-nav-link" href="./index.html"> Студия </a> </li>
                     <li class="site-nav__item"> <a class="site-nav-link current" href="./portfolio.html"> Портфолио </a> </li>
@@ -53,19 +52,24 @@
         <section class="section">
             <div class="container">
                 <h1 class="visual-hidden">Наши работы</h1>
-                <ul class="portfolio">
-                    <li class="portfolio__nav-item"> <button type="button" class="portfolio__nav-button"> Все </button> </li>
-                    <li class="portfolio__nav-item"> <button type="button" class="portfolio__nav-button"> Веб‑сайты </button> </li>
-                    <li class="portfolio__nav-item"> <button type="button" class="portfolio__nav-button"> Приложения </button> </li>
-                    <li class="portfolio__nav-item"> <button type="button" class="portfolio__nav-button"> Дизайн </button> </li>
-                    <li class="portfolio__nav-item"> <button type="button" class="portfolio__nav-button"> Маркетинг </button> </li>
-                </ul>
+                <div class="portfolio-list">
+                    <ul class="portfolio-btn">
+                        <li class="portfolio-btn__nav-item"> <button type="button" class="portfolio-btn__nav-button"> Все </button> </li>
+                        <li class="portfolio-btn__nav-item"> <button type="button" class="portfolio-btn__nav-button"> Веб‑сайты </button>
+                        </li>
+                        <li class="portfolio-btn__nav-item"> <button type="button" class="portfolio-btn__nav-button"> Приложения </button>
+                        </li>
+                        <li class="portfolio-btn__nav-item"> <button type="button" class="portfolio-btn__nav-button"> Дизайн </button> </li>
+                        <li class="portfolio-btn__nav-item"> <button type="button" class="portfolio-btn__nav-button"> Маркетинг </button>
+                        </li>
+                    </ul>
+                </div>
                 <h2 class="visual-hidden">Навигация</h2>
                 <ul class="activities">
                     <li class="activities__cards">
                         <a class="activities__link-item" href="">
                             <div class="activities-list">
-                                <img src="./images1/people1.jpg" alt="Технокряк" width="370">
+                                <img src="./images1/people1.jpg" alt="Технокряк">
                                 <p class="activities-top-text">Технокряк это современная площадка распространения
                                     коронавируса. Компании используют эту платформу для цифрового
                                     шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -80,7 +84,7 @@
                     <li class="activities__cards">
                         <a class="activities__link-item" href="">
                             <div class="activities-list">
-                                <img src="./images1/poster2.jpg" alt="Постер New Orlean" width="370">
+                                <img src="./images1/poster2.jpg" alt="Постер New Orlean">
                                 <p class="activities-top-text">Технокряк это современная площадка распространения
                                     коронавируса. Компании используют эту платформу для цифрового
                                     шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -95,7 +99,7 @@
                     <li class="activities__cards">
                         <a class="activities__link-item" href="">
                             <div class="activities-list">
-                                <img src="./images1/restaurant3.jpg" alt="Ресторан Seafood" width="370">
+                                <img src="./images1/restaurant3.jpg" alt="Ресторан Seafood">
                                 <p class="activities-top-text">Технокряк это современная площадка распространения
                                     коронавируса. Компании используют эту платформу для цифрового
                                     шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -110,7 +114,7 @@
                     <li class="activities__cards">
                         <a class="activities__link-item" href="">
                             <div class="activities-list">
-                                <img src="./images1/headphone4.jpg" alt="Проект Prime" width="370">
+                                <img src="./images1/headphone4.jpg" alt="Проект Prime">
                                 <p class="activities-top-text">Технокряк это современная площадка распространения
                                     коронавируса. Компании используют эту платформу для цифрового
                                     шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -125,7 +129,7 @@
                     <li class="activities__cards">
                         <a class="activities__link-item" href="">
                             <div class="activities-list">
-                                <img src="./images1/boxes5.jpg" alt="Проект Boxes" width="370">
+                                <img src="./images1/boxes5.jpg" alt="Проект Boxes">
                                 <p class="activities-top-text">Технокряк это современная площадка распространения
                                     коронавируса. Компании используют эту платформу для цифрового
                                     шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -137,10 +141,10 @@
                         </a>
                     </li>
 
-                    <li class="activities-cards">
+                    <li class="activities__cards">
                         <a class="activities__link-item" href="">
                             <div class="activities-list">
-                                <img src="./images1/screen6.jpg" alt="Екран" width="370">
+                                <img src="./images1/screen6.jpg" alt="Екран">
                                 <p class="activities-top-text">Технокряк это современная площадка распространения
                                     коронавируса. Компании используют эту платформу для цифрового
                                     шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -155,7 +159,7 @@
                     <li class="activities__cards">
                         <a class="activities__link-item" href="">
                             <div class="activities-list">
-                                <img src="./images1/edition7.jpg" alt="Издание" width="370">
+                                <img src="./images1/edition7.jpg" alt="Издание">
                                 <p class="activities-top-text">Технокряк это современная площадка распространения
                                     коронавируса. Компании используют эту платформу для цифрового
                                     шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -170,7 +174,7 @@
                     <li class="activities__cards">
                         <a class="activities__link-item" href="">
                             <div class="activities-list">
-                                <img src="./images1/project_lab8.jpg" alt="Проект LAB" width="370">
+                                <img src="./images1/project_lab8.jpg" alt="Проект LAB">
                                 <p class="activities-top-text">Технокряк это современная площадка распространения
                                     коронавируса. Компании используют эту платформу для цифрового
                                     шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -185,7 +189,7 @@
                     <li class="activities__cards">
                         <a class="activities__link-item" href="">
                             <div class="activities-list">
-                                <img src="./images1/business9.jpg" alt="Растущий бизнес" width="370">
+                                <img src="./images1/business9.jpg" alt="Растущий бизнес">
                                 <p class="activities-top-text">Технокряк это современная площадка распространения
                                     коронавируса. Компании используют эту платформу для цифрового
                                     шпионажа и атак на защищённые сервера конкурентов.</p>
@@ -254,7 +258,7 @@
                     </li>
                 </ul>
             </div>
-            <div>
+            <div class="footer-subscribe ">
                 <p class="footer-headline"> <strong>Подпишитесь на рассылку</strong> </p>
                 <form class="footer-form">
                     <input class="footer-form__input" type="email" name="user-mail" id="user-mail"
