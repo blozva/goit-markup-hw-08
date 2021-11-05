@@ -14,7 +14,7 @@
   @include font(400, 24px, 28px);
   color: var(--title-text-color);
   @media (min-width: 1200px) {
-    margin-right: 95px;
+    // margin-right: 95px;
     @include font(400, 26px, 31px);
   }
 }

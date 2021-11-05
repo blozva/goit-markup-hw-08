@@ -20,6 +20,11 @@
     <header class="header">
         <div class="container header-container">
             <p class="logo">Web<span class="text">Studio</span></p>
+            <button type="button" class="menu-open-btn">
+                <svg width="40" height="40" aria-label="переключатель мобильного меню">
+                    <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
+                </svg>
+            </button>
             <nav class="header-navigate">
                 <ul class="site-nav">
                     <li class="site-nav__item"> <a class="site-nav-link" href="./index.html"> Студия </a> </li>
@@ -47,6 +52,45 @@
                 </li>
             </ul>
         </div>
+        <div class="backdrop is-hidden">
+            <div class="menu-mobile">
+                <div class="menu-navigation">
+                    <ul class="menu-list">
+                        <li class="menu-list__item"> <a class="menu-link" href="./index.html"> Студия </a>
+                        </li>
+                        <li class="menu-list__item"> <a class="menu-link" href="./portfolio.html"> Портфолио </a>
+                        </li>
+                        <li class="menu-list__item"> <a class="menu-link" href=""> Контакты </a> </li>
+                    </ul>
+                    <ul class="contacts">
+                        <li class="contacts__item">
+                            <a class="contacts-mob" href="tel:+380961111111">
+                                +38&nbsp;096&nbsp;111‑11‑11
+                            </a>
+                        </li>
+                        <li class="contacts__item">
+                            <a class="contacts-email" href="mailto:info@devstudio.com">
+                                info@devstudio.com
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="menu-social">
+                        <li class="menu-social__item"><a href="" class="social-link">Instagram</a></li>
+                        <li class="menu-social__item"><span></span></li>
+                        <li class="menu-social__item"><a href="" class="social-link">Twitter</a></li>
+                        <li class="menu-social__item"><span></span></li>
+                        <li class="menu-social__item"><a href="" class="social-link">Facebook</a></li>
+                        <li class="menu-social__item"><span></span></li>
+                        <li class="menu-social__item"><a href="" class="social-link">LinkedIn</a></li>
+                    </ul>
+                </div>
+                <button type="button" class="menu-close-btn js-open-menu" aria-expanded="false" data-menu-button>
+                    <svg width="40" height="40" aria-label="переключатель мобильного меню">
+                        <use class="icon-close" href="./images/sprite.svg#icon-close"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>    
     </header>
     <main>
         <section class="section">
