@@ -223,7 +223,15 @@ img {
     flex-direction: row;
     align-items: normal;
   }
-  .auth-nav .auth-nav__item:not(:last-child) {
+}
+
+@media (min-width: 768px) {
+  .auth-nav__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  .auth-nav__item:not(:last-child) {
     margin-right: 50px;
   }
 }
@@ -597,6 +605,11 @@ img {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .benefits-list__title {
+    text-align: start;
+  }
 }
 
 .benefits-list__text {

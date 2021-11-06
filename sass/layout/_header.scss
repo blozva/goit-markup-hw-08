@@ -58,6 +58,7 @@
   @include flex();
   margin-left: auto;
   display: none;
+
   @media (min-width: 768px) {
     display: flex;
     flex-direction: column;
@@ -68,9 +69,14 @@
     display: flex;
     flex-direction: row;
     align-items: normal;
-    .auth-nav__item:not(:last-child) {
-      margin-right: 50px;
-    }
+  }
+}
+.auth-nav__item:not(:last-child) {
+  @media (min-width: 768px) {
+    margin-bottom: 10px;
+  }
+  @media (min-width: 1200px) {
+    margin-right: 50px;
   }
 }
 
