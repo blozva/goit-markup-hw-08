@@ -8,13 +8,16 @@
 }
 
 .label-checkbox {
-  font-size: 14px;
-  line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
+  @include font(400, 12px, 14px);
   color: var(--text-item-color);
   @include flex();
   cursor: pointer;
   justify-content: center;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+  }
 }
 .contour-checkbox {
   width: 16px;
