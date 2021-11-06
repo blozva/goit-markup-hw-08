@@ -17,10 +17,10 @@
 .menu-close-btn .icon-close {
   border: none;
   transition: color var(--timing-duration) var(--timing-function);
-    &:hover,
-    &:focus {
-      color: var(--accent-color);
-    }
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .menu-open-btn .icon-menu {
@@ -29,10 +29,9 @@
     display: none;
   }
   transition: color var(--timing-duration) var(--timing-function);
-    &:hover,
-    &:focus {
-      color: var(--accent-color);
-    }
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
   }
 }
 

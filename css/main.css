@@ -261,15 +261,23 @@ img {
 
 .menu-close-btn .icon-close {
   border: none;
+  transition: color var(--timing-duration) var(--timing-function);
+}
+.menu-close-btn .icon-close:hover, .menu-close-btn .icon-close:focus {
+  color: var(--accent-color);
 }
 
 .menu-open-btn .icon-menu {
   justify-content: center;
+  transition: color var(--timing-duration) var(--timing-function);
 }
 @media screen and (min-width: 768px) {
   .menu-open-btn .icon-menu {
     display: none;
   }
+}
+.menu-open-btn .icon-menu:hover, .menu-open-btn .icon-menu:focus {
+  color: var(--accent-color);
 }
 
 .menu-mobile {
