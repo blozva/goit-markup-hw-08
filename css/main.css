@@ -1078,6 +1078,27 @@ img {
 .activities__link-item:hover .activities-top-text, .activities__link-item:focus .activities-top-text {
   transform: translateY(0);
 }
+@media screen and (min-width: 480px) {
+  .activities-top-text {
+    padding: 77px 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .activities-top-text {
+    padding: 49px 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .activities-top-text {
+    padding: 63px 24px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .activities-top-text {
+    font-size: 13px;
+    line-height: calc(20 / 13);
+  }
+}
 
 .activities-title {
   padding-top: 20px;
