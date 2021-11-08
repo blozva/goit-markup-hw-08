@@ -52,6 +52,12 @@
   border-radius: 2px;
   background-color: var(--accent-color);
   bottom: -40px;
+  @media (min-width: 768px) {
+    bottom: -45px;
+  }
+  @media (min-width: 1200px) {
+    bottom: -40px;
+  }
 }
 
 .auth-nav {
@@ -81,7 +87,12 @@
 }
 
 .auth-nav-link {
-  @include font(500, 14px, 16px, 0.02em);
+  @media (min-width: 768px) {
+    @include font(500, 12px, 14px, 0.02em);
+  }
+  @media (min-width: 1200px) {
+    @include font(500, 14px, 16px, 0.02em);
+  }
   color: var(--text-item-color);
   @include flex();
   transition: color var(--timing-duration) var(--timing-function);
