@@ -1075,7 +1075,6 @@ img {
 }
 
 .activities__link-item {
-  flex-direction: column;
   transition: box-shadow var(--timing-duration) var(--timing-function);
 }
 .activities__link-item:hover, .activities__link-item:focus {
@@ -1088,7 +1087,6 @@ img {
 }
 
 .activities-top-text {
-  flex-grow: 1;
   padding: 63px 24px;
   font-size: 18px;
   line-height: 1.5;
