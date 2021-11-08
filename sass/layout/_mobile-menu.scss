@@ -15,7 +15,6 @@
 }
 
 .menu-close-btn .icon-close {
-  border: none;
   transition: color var(--timing-duration) var(--timing-function);
   &:hover,
   &:focus {
@@ -38,7 +37,7 @@
 .menu-mobile {
   width: 100vw;
   height: 100%;
-  padding: 10px 15px 48px 40px;
+  padding: 17px 17px 48px 40px;
   display: flex;
   justify-content: space-between;
   position: absolute;
