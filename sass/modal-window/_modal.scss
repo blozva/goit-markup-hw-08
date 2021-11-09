@@ -13,7 +13,6 @@
   transition: transform var(--timing-duration) var(--timing-function);
   opacity: 1;
   @media screen and (max-width: 479px) {
-    // flex-basis: calc(100% / 2 - 30px);
     min-width: 320px;
     min-height: 609px;
   }

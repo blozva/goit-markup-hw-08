@@ -9,23 +9,23 @@
   background-color: var(--primary-title-color);
 }
 .menu-open-btn {
+  align-items: center;
+  justify-content: center;
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
-
-.menu-close-btn .icon-close {
+.menu-open-btn .icon-menu {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
   transition: color var(--timing-duration) var(--timing-function);
   &:hover,
   &:focus {
     color: var(--accent-color);
   }
 }
-
-.menu-open-btn .icon-menu {
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
+.menu-close-btn .icon-close {
   transition: color var(--timing-duration) var(--timing-function);
   &:hover,
   &:focus {

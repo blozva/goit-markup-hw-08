@@ -1,26 +1,18 @@
 .header {
-  @media (max-width: 767px) {
-    padding-top: 22px;
-    padding-bottom: 22px;
-  }
-  padding-top: 32px;
-  padding-bottom: 32px;
   border-bottom: 1px solid #ececec;
 }
 .header-container {
   @include flex();
 }
-
 .header-navigate {
   display: flex;
-  margin-left: 0;
-  align-items: start;
-  @media (max-width: 767px) {
-    @include flex();
-    display: none;
+  padding: 10px 0px 10px 0px;
+  margin-left: auto;
+  @media (min-width: 768px) {
+    margin-left: 88px;
+    padding: 0px;
   }
   @media (max-width: 1199px) {
-    margin-left: 88px;
   }
 }
 
@@ -29,10 +21,17 @@
   .site-nav__item:not(:last-child) {
     margin-right: 50px;
   }
+  @media (max-width: 767px) {
+    display: none;
+  }
 }
 
 .site-nav-link {
   @include font(500, 14px, 16px, 0.02em);
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  align-items: center;
   color: var(--title-text-color);
   position: relative;
   transition: color var(--timing-duration) var(--timing-function);
@@ -51,13 +50,7 @@
   height: 4px;
   border-radius: 2px;
   background-color: var(--accent-color);
-  bottom: -40px;
-  @media (min-width: 768px) {
-    bottom: -45px;
-  }
-  @media (min-width: 1200px) {
-    bottom: -40px;
-  }
+  bottom: -1px;
 }
 
 .auth-nav {
@@ -72,32 +65,32 @@
   }
 
   @media (min-width: 1200px) {
-    display: flex;
     flex-direction: row;
-    align-items: normal;
+    align-items: center;
   }
 }
+
 .auth-nav__item:not(:last-child) {
+  @include flex();
   @media (min-width: 768px) {
     margin-bottom: 10px;
   }
   @media (min-width: 1200px) {
     margin-right: 50px;
+    margin-bottom: 0px;
   }
 }
 
 .auth-nav-link {
-  @media (min-width: 768px) {
-    @include font(500, 12px, 14px, 0.02em);
-  }
-  @media (min-width: 1200px) {
-    @include font(500, 14px, 16px, 0.02em);
-  }
-  color: var(--text-item-color);
   @include flex();
+  @include font(500, 14px, 16px, 0.02em);
+  color: var(--text-item-color);
   transition: color var(--timing-duration) var(--timing-function);
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+  @media screen and (max-width: 768px) {
+    @include font(500, 12px, 14px, 0.02em);
   }
 }
