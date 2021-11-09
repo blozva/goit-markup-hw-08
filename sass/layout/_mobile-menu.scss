@@ -76,10 +76,12 @@
 .contacts {
   display: flex;
   flex-direction: column;
-  // margin-top: 306px;
   margin-bottom: 36px;
 }
 .contacts-mob {
+  @media screen and (max-width: 479px) {
+    @include font(500, 26px, 32px, 0.02em);
+  }
   @include font(500, 34px, 40px, 0.02em);
   color: var(--accent-color);
 }
